@@ -1,0 +1,98 @@
+{
+  "regions": {
+    "North": {
+      "states": ["Punjab", "Haryana", "Uttar Pradesh", "Delhi", "Rajasthan", "Himachal Pradesh", "Uttarakhand", "Jammu and Kashmir"],
+      "appliances": ["pressure cooker", "tawa", "kadai", "tandoor", "gas stove", "belan (rolling pin)"],
+      "cookingStyle": "Heavy use of pressure cooker for dal and rajma. Tawa for roti and paratha. Kadai for sabzi.",
+      "typicalDishes": ["dal makhani", "rajma", "chole", "paratha", "paneer tikka"]
+    },
+    "South": {
+      "states": ["Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh", "Telangana"],
+      "appliances": ["wet grinder", "idli pot", "dosa tawa", "pressure cooker", "kadai", "coconut scraper"],
+      "cookingStyle": "Wet grinder essential for idli/dosa batter. Idli pot for steaming. Flat dosa tawa for crepes.",
+      "typicalDishes": ["idli", "dosa", "sambar", "rasam", "Kerala fish curry", "biryani"]
+    },
+    "East": {
+      "states": ["West Bengal", "Odisha", "Bihar", "Jharkhand", "Assam", "Meghalaya", "Manipur", "Tripura"],
+      "appliances": ["kadai", "steamer", "pressure cooker", "tawa", "earthen pot"],
+      "cookingStyle": "Steaming widely used. Mustard oil in kadai is standard. Earthen pots for slow cooking.",
+      "typicalDishes": ["macher jhol", "rasgulla", "litti chokha", "aloo posto", "hilsa curry"]
+    },
+    "West": {
+      "states": ["Maharashtra", "Gujarat", "Goa", "Madhya Pradesh", "Chhattisgarh"],
+      "appliances": ["pressure cooker", "kadai", "tawa", "dhokla steamer", "hand blender"],
+      "cookingStyle": "Dhokla steamer for Gujarati snacks. Pressure cooker for dal. Kadai for sabzi.",
+      "typicalDishes": ["vada pav", "dhokla", "pav bhaji", "fish curry (Goa)", "poha"]
+    },
+    "Central": {
+      "states": ["Madhya Pradesh", "Chhattisgarh"],
+      "appliances": ["kadai", "tawa", "pressure cooker", "clay pot"],
+      "cookingStyle": "Simple cooking with kadai and tawa. Clay pots for traditional preparations.",
+      "typicalDishes": ["dal baati churma", "bhutte ki kees", "poha"]
+    },
+    "Northeast": {
+      "states": ["Assam", "Meghalaya", "Manipur", "Mizoram", "Nagaland", "Arunachal Pradesh", "Sikkim", "Tripura"],
+      "appliances": ["steamer", "kadai", "earthen pot", "bamboo steamer"],
+      "cookingStyle": "Steaming and boiling dominant. Minimal oil. Bamboo steamers for traditional dishes.",
+      "typicalDishes": ["momos", "thukpa", "bamboo shoot curry", "smoked pork"]
+    }
+  },
+  "applianceHazards": {
+    "pressure cooker": {
+      "hazardLevel": "high",
+      "safetyNotes": "Never open while pressurised. Check valve before each use. Do not fill beyond two-thirds.",
+      "seniorNote": "⚠️ Wait for all steam to release naturally before opening — at least 10 minutes after turning off.",
+      "kidsNote": "This needs a grown-up — pressure cookers can be dangerous! 🙋"
+    },
+    "tawa": {
+      "hazardLevel": "medium",
+      "safetyNotes": "Handle gets extremely hot. Use dry cloth or heat-proof handle cover.",
+      "seniorNote": "⚠️ Use a long spatula and keep your face away from steam when adding water.",
+      "kidsNote": "The tawa gets very hot — ask a grown-up to handle it! 🙋"
+    },
+    "kadai": {
+      "hazardLevel": "medium",
+      "safetyNotes": "Oil can splatter when adding wet ingredients. Tilt pan away from you.",
+      "seniorNote": "⚠️ Add ingredients slowly along the side of the kadai to prevent oil splatter.",
+      "kidsNote": "Hot oil splashes — grown-ups only for this step! 🙋"
+    },
+    "wet grinder": {
+      "hazardLevel": "low",
+      "safetyNotes": "Do not insert hands while running. Ensure lid is secure.",
+      "seniorNote": "⚠️ Ensure the drum is locked before switching on.",
+      "kidsNote": "Keep fingers away from the grinder — ask a grown-up! 🙋"
+    },
+    "tandoor": {
+      "hazardLevel": "high",
+      "safetyNotes": "Extremely high heat. Use long skewers and heat-proof gloves only.",
+      "seniorNote": "⚠️ Tandoor reaches very high temperatures — use only with assistance.",
+      "kidsNote": "Tandoors are very very hot — only grown-ups! 🙋"
+    },
+    "gas stove": {
+      "hazardLevel": "medium",
+      "safetyNotes": "Check for gas leaks before lighting. Never leave unattended.",
+      "seniorNote": "⚠️ Always check that the knob is fully off after cooking.",
+      "kidsNote": "Gas stoves need a grown-up — never touch the knobs alone! 🙋"
+    },
+    "idli pot": {
+      "hazardLevel": "low",
+      "safetyNotes": "Steam burns. Use cloth to handle lid. Open away from face.",
+      "seniorNote": "⚠️ Open the lid slowly and away from you — steam can burn.",
+      "kidsNote": "Hot steam inside — ask a grown-up to open it! 🙋"
+    }
+  },
+  "stateToRegion": {
+    "Punjab": "North", "Haryana": "North", "Uttar Pradesh": "North",
+    "Delhi": "North", "Rajasthan": "North", "Himachal Pradesh": "North",
+    "Uttarakhand": "North", "Jammu and Kashmir": "North",
+    "Tamil Nadu": "South", "Kerala": "South", "Karnataka": "South",
+    "Andhra Pradesh": "South", "Telangana": "South",
+    "West Bengal": "East", "Odisha": "East", "Bihar": "East",
+    "Jharkhand": "East", "Assam": "East",
+    "Maharashtra": "West", "Gujarat": "West", "Goa": "West",
+    "Madhya Pradesh": "Central", "Chhattisgarh": "Central",
+    "Meghalaya": "Northeast", "Manipur": "Northeast", "Mizoram": "Northeast",
+    "Nagaland": "Northeast", "Arunachal Pradesh": "Northeast",
+    "Sikkim": "Northeast", "Tripura": "Northeast"
+  }
+}

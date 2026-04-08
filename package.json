@@ -1,0 +1,10 @@
+{
+  "name": "prestige-smartchef-plus",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd server && npm start\" \"cd client && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

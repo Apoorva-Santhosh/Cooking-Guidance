@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+/* ── Senior App Root ─────────────────────────────────────────── */
+.senior-app {
+  min-height: 100vh;
+  background: #F8FAF8;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #1a2e1a;
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+.senior-header {
+  background: #fff;
+  border-bottom: 3px solid #3A8A6E;
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.senior-header-left h1 {
+  font-family: 'Lora', serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #1a2e1a;
+  margin-bottom: 4px;
+}
+
+.senior-header-left h1 span { color: #3A8A6E; }
+
+.senior-header-left p {
+  font-size: 16px;
+  color: #5a7a5a;
+  font-weight: 400;
+}
+
+.senior-mode-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(58,138,110,0.10);
+  border: 2px solid rgba(58,138,110,0.3);
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2d7059;
+}
+
+.senior-change-btn {
+  background: none;
+  border: 2px solid #3A8A6E;
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3A8A6E;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.senior-change-btn:hover {
+  background: #3A8A6E;
+  color: #fff;
+}
+
+/* ── Main layout ─────────────────────────────────────────────── */
+.senior-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ── Section cards ───────────────────────────────────────────── */
+.senior-section {
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #C8DDD0;
+  overflow: hidden;
+}
+
+.senior-section-header {
+  background: #3A8A6E;
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.senior-section-icon {
+  font-size: 28px;
+}
+
+.senior-section-title {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.senior-section-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+}
+
+.senior-section-body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Labels ──────────────────────────────────────────────────── */
+.senior-label {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2d4a2d;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ── Inputs ──────────────────────────────────────────────────── */
+.senior-input,
+.senior-textarea {
+  width: 100%;
+  background: #F3F8F5;
+  border: 2.5px solid #C8DDD0;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
+  color: #1a2e1a;
+  line-height: 1.7;
+  transition: all 0.2s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.senior-input:focus,
+.senior-textarea:focus {
+  border-color: #3A8A6E;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(58,138,110,0.12);
+}
+
+.senior-input::placeholder,
+.senior-textarea::placeholder {
+  color: #9ab8a3;
+}
+
+.senior-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ── Big buttons ─────────────────────────────────────────────── */
+.senior-btn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 14px;
+  border: none;
+  background: #3A8A6E;
+  color: #fff;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 16px rgba(58,138,110,0.3);
+  min-height: 62px;
+}
+
+.senior-btn:hover {
+  background: #2d7059;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(58,138,110,0.35);
+}
+
+.senior-btn:active { transform: translateY(0); }
+
+.senior-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.senior-btn-secondary {
+  background: #fff;
+  color: #3A8A6E;
+  border: 2.5px solid #3A8A6E;
+  box-shadow: none;
+}
+
+.senior-btn-secondary:hover {
+  background: #F3F8F5;
+  transform: translateY(-1px);
+}
+
+/* ── Stepper ─────────────────────────────────────────────────── */
+.senior-stepper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.senior-step-progress {
+  font-size: 15px;
+  font-weight: 600;
+  color: #5a7a5a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.senior-step-card {
+  background: #F3F8F5;
+  border: 2.5px solid #3A8A6E;
+  border-radius: 14px;
+  padding: 24px 26px;
+  margin-bottom: 16px;
+  animation: fadeStep 0.35s ease;
+}
+
+@keyframes fadeStep {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.senior-step-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #3A8A6E;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.senior-step-text {
+  font-size: 20px;
+  color: #1a2e1a;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.senior-warning-card {
+  background: #FFF8E6;
+  border: 2.5px solid #F59E0B;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  font-size: 17px;
+  color: #78350F;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.senior-nav-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+}
+
+/* ── Result box ──────────────────────────────────────────────── */
+.senior-result {
+  background: #F3F8F5;
+  border: 2.5px solid #C8DDD0;
+  border-radius: 14px;
+  padding: 22px 24px;
+  font-size: 19px;
+  color: #1a2e1a;
+  line-height: 1.9;
+  white-space: pre-wrap;
+}
+
+.senior-result-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a7a5a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+/* ── Safety banner ───────────────────────────────────────────── */
+.senior-safety-banner {
+  background: #FFF8E6;
+  border-left: 5px solid #F59E0B;
+  border-radius: 0 12px 12px 0;
+  padding: 14px 18px;
+  font-size: 16px;
+  color: #78350F;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* ── Summary chips ───────────────────────────────────────────── */
+.senior-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.senior-chip {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 100px;
+  background: rgba(58,138,110,0.10);
+  color: #2d7059;
+  border: 1.5px solid rgba(58,138,110,0.2);
+}
+
+/* ── Spinner ─────────────────────────────────────────────────── */
+.senior-spinner {
+  width: 22px; height: 22px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Footer ──────────────────────────────────────────────────── */
+.senior-footer {
+  text-align: center;
+  padding: 32px 0;
+  font-size: 16px;
+  color: #5a7a5a;
+  border-top: 2px solid #C8DDD0;
+  margin: 0 24px;
+}
