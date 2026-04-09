@@ -1,8 +1,8 @@
-# Prestige SmartChef+
+# AI - Powered Cooking Guidance
 
 ## 1. Project Overview
 
-Prestige SmartChef+ is a software-first, assistive cooking intelligence prototype that demonstrates guided cooking, time-based ingredient intelligence, and safety-aware AI assistance for Indian kitchens.
+This is a software-first, assistive cooking intelligence prototype that demonstrates guided cooking, time-based ingredient intelligence, and safety-aware AI assistance for Indian kitchens.
 
 ## 2. Key Principles
 
