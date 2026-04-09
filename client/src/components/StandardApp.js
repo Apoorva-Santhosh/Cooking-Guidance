@@ -1,17 +1,21 @@
-import React from 'react';
-import RecipeNormalizer from './RecipeNormalizer';
-import CookingAssistant from './CookingAssistant';
+import React, { useState } from 'react';
+import RecipeSearch from './RecipeSearch';
+import CookingChat from './CookingChat';
 
 function StandardApp({ onChangeMode }) {
+  const [selectedRecipe, setSelectedRecipe] = useState(null);
+
   return (
-    <div className="app accent-orange" data-mode="standard">
+    <div className="app" data-mode="standard">
+
+      {/* Header */}
       <header className="app-header">
-        <div className="header-badge">🍛 AI-Powered Kitchen</div>
+        <div className="header-badge">AI-Powered Kitchen</div>
         <h1 className="app-title">
           Smart Indian Kitchen<br /><em>Assistant</em>
         </h1>
         <p className="app-subtitle">
-          Personalised cooking guidance tailored for Indian kitchens.
+          Search any Indian dish and get step-by-step AI cooking guidance.
         </p>
         <div className="mode-chip-row">
           <span className="mode-chip">👨‍🍳 Standard Mode</span>
@@ -19,13 +23,18 @@ function StandardApp({ onChangeMode }) {
         </div>
         <div className="header-divider" />
       </header>
-      <main className="cards-grid">
-        <RecipeNormalizer userMode="standard" />
-        <CookingAssistant userMode="standard" />
+
+      {/* Main — Recipe Search left, Chat right */}
+      <main className="app-main">
+        <RecipeSearch
+          onRecipeSelect={setSelectedRecipe}
+          selectedRecipe={selectedRecipe}
+        />
+        <CookingChat
+          userMode="standard"
+          selectedRecipe={selectedRecipe}
+        />
       </main>
-      <footer className="app-footer">
-        Smart Indian Kitchen · Standard Mode
-      </footer>
     </div>
   );
 }

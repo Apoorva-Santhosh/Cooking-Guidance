@@ -341,3 +341,49 @@
   border-top: 2px solid #C8DDD0;
   margin: 0 24px;
 }
+
+/* ── Senior mode overrides for shared components ──────────────── */
+
+/* Recipe search results — larger text */
+.senior-app .card-title   { font-size: 1.4rem; }
+.senior-app .card-desc    { font-size: 15px; }
+.senior-app .field-label  { font-size: 16px; }
+.senior-app .field-input  { font-size: 18px; padding: 14px 18px; }
+
+/* Recipe result cards in search */
+.senior-app [style*="font-size: 14px"] { font-size: 17px !important; }
+
+/* Tags */
+.senior-app .tag          { font-size: 14px; padding: 5px 14px; }
+
+/* Chat suggestion pills */
+.senior-app .chat-messages + div button {
+  font-size: 15px !important;
+  padding: 8px 18px !important;
+  border-radius: 10px !important;
+  border: 2px solid rgba(58,138,110,0.35) !important;
+  background: rgba(58,138,110,0.08) !important;
+  color: #2d7059 !important;
+  margin-bottom: 4px;
+  min-height: 44px;
+}
+
+/* AI response cards */
+.senior-app .ai-response-title { font-size: 13px; }
+.senior-app .tip-label         { font-size: 13px; }
+.senior-app .tip-val           { font-size: 17px; line-height: 1.8; }
+.senior-app .ai-plain          { font-size: 17px; line-height: 1.8; }
+.senior-app .msg-user-bubble   { font-size: 17px; line-height: 1.7; }
+
+/* Chat input */
+.senior-app .field-input[type="text"] { font-size: 18px; padding: 14px 18px; min-height: 54px; }
+.senior-app .btn-send {
+  font-size: 17px !important;
+  padding: 14px 22px !important;
+  min-height: 54px;
+}
+
+/* Recipe name in search results */
+.senior-app .recipe-result-name { font-size: 1.3rem; }
+.senior-app .steps-label        { font-size: 14px; }
+.senior-app .step-text          { font-size: 17px; line-height: 1.8; }

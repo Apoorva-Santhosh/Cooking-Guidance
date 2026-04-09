@@ -11,21 +11,22 @@ exports.askAssistant = async (req, res) => {
     const {
       question, currentStage, applianceType,
       safetyConstraints, userMode, recipeContext,
+      history,
     } = req.body;
 
     if (!question?.trim()) {
       return res.status(400).json({ error: 'Question is required.' });
     }
 
-    const mode = VALID_MODES.includes(userMode) ? userMode : 'standard';
-
+    const mode   = VALID_MODES.includes(userMode) ? userMode : 'standard';
     const result = await generateResponse({
       question:          question.trim(),
       currentStage:      currentStage?.trim()      || '',
-      applianceType:     applianceType?.trim()     || '',
-      safetyConstraints: safetyConstraints?.trim() || '',
+      applianceType:     applianceType?.trim()      || '',
+      safetyConstraints: safetyConstraints?.trim()  || '',
       userMode:          mode,
-      recipeContext:     recipeContext             || null,
+      recipeContext:     recipeContext              || null,
+      history:           Array.isArray(history) ? history : [],
     });
 
     return res.status(200).json(result);
