@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './KidsApp.css';
-import RecipeSearch from './RecipeSearch';
 import CookingChat from './CookingChat';
 
-// ── Kids Step Card ────────────────────────────────────────────────────────────
 function KidsStepCard({ step, stepNumber, index }) {
   const isHazard = step.isHazardous || step.hidden;
   return (
