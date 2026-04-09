@@ -107,7 +107,7 @@ function RecipeSearchInline({ onRecipeSelect, selectedRecipe }) {
     if (!query.trim()) return;
     setLoading(true); setResults([]); setSearched(true);
     try {
-      const res = await fetch(`/api/recipes/search?q=${encodeURIComponent(query)}&limit=4`);
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/recipes/search?q=${encodeURIComponent(query)}&limit=4`);
       const data = await res.json();
       setResults(data.recipes || []);
     } catch { setResults([]); }

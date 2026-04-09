@@ -17,7 +17,7 @@ function RecipeSearch({ onRecipeSelect, selectedRecipe }) {
     if (!query.trim()) return;
     setLoading(true); setError(null); setResults([]); setSearched(true);
     try {
-      const res = await fetch(`/api/recipes/search?q=${encodeURIComponent(query)}&limit=5`);
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/recipes/search?q=${encodeURIComponent(query)}&limit=5`);
       if (!res.ok) throw new Error(`Server error: ${res.status}`);
       const data = await res.json();
       setResults(data.recipes || []);
